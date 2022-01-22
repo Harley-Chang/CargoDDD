@@ -6,4 +6,14 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Bus\" />
+    <Folder Include="EventSourcing\" />
+    <Folder Include="Repository\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CargoDDD.Domain\CargoDDD.Domain.csproj" />
+  </ItemGroup>
+
 </Project>
