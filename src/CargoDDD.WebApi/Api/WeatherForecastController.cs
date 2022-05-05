@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 
-namespace CargoDDD.WebApi.Controllers;
+namespace CargoDDD.WebApi.Api;
 
 [ApiController]
 [Route("[controller]")]

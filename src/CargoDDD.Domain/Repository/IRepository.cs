@@ -1,4 +1,4 @@
-﻿namespace CargoDDD.Domain.Interfaces;
+﻿namespace CargoDDD.Domain.Repository;
 public interface IRepository<TEntity> : IDisposable where TEntity : class
 {
     Task AddAsync(TEntity entity);

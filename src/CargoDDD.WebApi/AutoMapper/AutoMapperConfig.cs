@@ -1,6 +1,5 @@
 ﻿using AutoMapper;
-
-namespace CargoDDD.Application.AutoMapper
+namespace CargoDDD.WebApi.AutoMapper
 {
     public class AutoMapperConfig
     {
