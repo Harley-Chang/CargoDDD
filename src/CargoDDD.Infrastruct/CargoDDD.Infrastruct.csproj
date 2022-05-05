@@ -7,9 +7,15 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Bus\" />
-    <Folder Include="EventSourcing\" />
-    <Folder Include="Repository\" />
+    <Folder Include="Util\EventBus\" />
+    <Folder Include="Util\EventSourcing\" />
+    <Folder Include="Util\Repository\" />
+    <Folder Include="Config\" />
+    <Folder Include="Util\Mq\" />
+    <Folder Include="Util\Cache\" />
+    <Folder Include="Util\Framework\" />
+    <Folder Include="Util\Message\" />
+    <Folder Include="Util\File\" />
   </ItemGroup>
 
   <ItemGroup>

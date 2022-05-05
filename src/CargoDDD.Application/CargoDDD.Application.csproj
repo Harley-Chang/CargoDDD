@@ -9,7 +9,6 @@
   <ItemGroup>
     <Folder Include="Event\Publish\" />
     <Folder Include="Event\Subscribe\" />
-    <Folder Include="Services\" />
   </ItemGroup>
 
   <ItemGroup>
