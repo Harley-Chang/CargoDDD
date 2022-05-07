@@ -1,5 +1,5 @@
 ﻿namespace CargoDDD.Domain.LocationAggregate.Repository.Facade;
-public interface IRepository<TEntity> : IDisposable where TEntity : class
+public interface ILocationRepository<TEntity> : IDisposable where TEntity : class
 {
     Task AddAsync(TEntity entity);
     TEntity GetByIdAsync(Guid id);
