@@ -14,6 +14,34 @@
     <Folder Include="CargoAggregate\Event\" />
     <Folder Include="CargoAggregate\Repository\PersistenceObject\" />
     <Folder Include="CargoAggregate\Repository\Persistence\" />
+    <Folder Include="CarrierMomentAggregate\Command\" />
+    <Folder Include="CarrierMomentAggregate\Entity\" />
+    <Folder Include="CarrierMomentAggregate\EventHandler\" />
+    <Folder Include="CarrierMomentAggregate\Event\" />
+    <Folder Include="CarrierMomentAggregate\Repository\PersistenceObject\" />
+    <Folder Include="CarrierMomentAggregate\Repository\Persistence\" />
+    <Folder Include="CarrierMomentAggregate\ValueObject\" />
+    <Folder Include="CustomerAggregate\Command\" />
+    <Folder Include="CustomerAggregate\Entity\" />
+    <Folder Include="CustomerAggregate\EventHandler\" />
+    <Folder Include="CustomerAggregate\Event\" />
+    <Folder Include="CustomerAggregate\Repository\PersistenceObject\" />
+    <Folder Include="CustomerAggregate\Repository\Persistence\" />
+    <Folder Include="CustomerAggregate\ValueObject\" />
+    <Folder Include="HandlingEventAggregate\Command\" />
+    <Folder Include="HandlingEventAggregate\Entity\" />
+    <Folder Include="HandlingEventAggregate\EventHandler\" />
+    <Folder Include="HandlingEventAggregate\Event\" />
+    <Folder Include="HandlingEventAggregate\Repository\PersistenceObject\" />
+    <Folder Include="HandlingEventAggregate\Repository\Persistence\" />
+    <Folder Include="HandlingEventAggregate\ValueObject\" />
+    <Folder Include="LocationAggregate\Command\" />
+    <Folder Include="LocationAggregate\Entity\" />
+    <Folder Include="LocationAggregate\EventHandler\" />
+    <Folder Include="LocationAggregate\Event\" />
+    <Folder Include="LocationAggregate\Repository\PersistenceObject\" />
+    <Folder Include="LocationAggregate\Repository\Persistence\" />
+    <Folder Include="LocationAggregate\ValueObject\" />
   </ItemGroup>
 
 </Project>
