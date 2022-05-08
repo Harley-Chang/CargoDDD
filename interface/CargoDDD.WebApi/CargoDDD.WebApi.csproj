@@ -11,7 +11,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\infrastruct\CargoDDD.Config\CargoDDD.Config.csproj" />
+    <ProjectReference Include="..\..\application\CargoDDD.Application\CargoDDD.Application.csproj" />
+    <ProjectReference Include="..\..\domain\CargoDDD.Domain\CargoDDD.Domain.csproj" />
+    <ProjectReference Include="..\..\infrastruct\CargoDDD.Repository\CargoDDD.Repository.csproj" />
   </ItemGroup>
 
 </Project>
