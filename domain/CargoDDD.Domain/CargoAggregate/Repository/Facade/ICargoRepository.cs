@@ -1,10 +1,5 @@
 ﻿namespace CargoDDD.Domain.CargoAggregate.Repository.Facade;
-public interface ICargoRepository<TEntity> : IDisposable where TEntity : class
+public interface ICargoRepository
 {
-    Task AddAsync(TEntity entity);
-    TEntity GetByIdAsync(Guid id);
-    IQueryable<TEntity> GetAllAsync();
-    Task UpdateAsync(TEntity entity);
-    Task RemoveAsync(Guid id);
-    Task<int> SaveChangesAsync();
+    Task AddAsync(object entity);
 }

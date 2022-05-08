@@ -43,6 +43,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CargoDDD.Util", "infrastruc
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CargoDDD.Message", "infrastruct\CargoDDD.Message\CargoDDD.Message.csproj", "{7B5A829D-B125-4072-AF0D-F77DD804B72B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CargoDDD.WebApi.Core", "interface\CargoDDD.WebApi.Core\CargoDDD.WebApi.Core.csproj", "{BC9587F2-CECA-4EAF-8C73-44F2AB136A6F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -109,6 +111,10 @@ Global
 		{7B5A829D-B125-4072-AF0D-F77DD804B72B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7B5A829D-B125-4072-AF0D-F77DD804B72B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7B5A829D-B125-4072-AF0D-F77DD804B72B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC9587F2-CECA-4EAF-8C73-44F2AB136A6F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC9587F2-CECA-4EAF-8C73-44F2AB136A6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC9587F2-CECA-4EAF-8C73-44F2AB136A6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC9587F2-CECA-4EAF-8C73-44F2AB136A6F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -129,6 +135,7 @@ Global
 		{4ABC46C1-678F-49BE-85F2-92251E47B4F1} = {8A9317C6-AFCE-4975-926B-44E8E0CEB379}
 		{62609BCB-3B39-4823-93C3-4C50446A697F} = {8A9317C6-AFCE-4975-926B-44E8E0CEB379}
 		{7B5A829D-B125-4072-AF0D-F77DD804B72B} = {8A9317C6-AFCE-4975-926B-44E8E0CEB379}
+		{BC9587F2-CECA-4EAF-8C73-44F2AB136A6F} = {CA2E26AE-731C-4281-B03B-9B33BE1E00DD}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F6C0F758-5035-4CF1-99C6-AE94886B1C82}
