@@ -1,4 +1,4 @@
-﻿namespace CargoDDD.Domain.CustomerAggregate.Repository.Facade;
+﻿namespace CargoDDD.Domain.CustomerAggregate.Repository;
 public interface ICustomerRepository<TEntity> : IDisposable where TEntity : class
 {
     Task AddAsync(TEntity entity);

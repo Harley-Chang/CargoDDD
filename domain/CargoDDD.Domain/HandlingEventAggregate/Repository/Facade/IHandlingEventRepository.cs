@@ -1,4 +1,4 @@
-﻿namespace CargoDDD.Domain.HandlingEventAggregate.Repository.Facade;
+﻿namespace CargoDDD.Domain.HandlingEventAggregate.Repository;
 public interface IHandlingEventRepository<TEntity> : IDisposable where TEntity : class
 {
     Task AddAsync(TEntity entity);

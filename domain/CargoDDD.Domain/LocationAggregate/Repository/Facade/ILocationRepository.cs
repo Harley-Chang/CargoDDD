@@ -1,4 +1,4 @@
-﻿namespace CargoDDD.Domain.LocationAggregate.Repository.Facade;
+﻿namespace CargoDDD.Domain.LocationAggregate.Repository;
 public interface ILocationRepository<TEntity> : IDisposable where TEntity : class
 {
     Task AddAsync(TEntity entity);

@@ -1,4 +1,5 @@
 using CargoDDD.WebApi.Extensions;
+using System.Reflection;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,6 +11,11 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddApplication();
 builder.Services.AddRepository();
+builder.Services.AddAutoMapper(
+    Assembly.Load("CargoDDD.WebApi"),
+    Assembly.Load("CargoDDD.Application"),
+    Assembly.Load("CargoDDD.Domain")
+    );
 
 var app = builder.Build();
 

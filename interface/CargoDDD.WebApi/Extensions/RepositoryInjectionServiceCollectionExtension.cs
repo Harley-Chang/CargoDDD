@@ -1,4 +1,4 @@
-﻿using CargoDDD.Domain.CargoAggregate.Repository.Facade;
+﻿using CargoDDD.Domain.CargoAggregate.Repository;
 using CargoDDD.Repository;
 
 namespace CargoDDD.WebApi.Extensions

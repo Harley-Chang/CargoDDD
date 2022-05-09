@@ -1,5 +1,4 @@
-﻿using CargoDDD.Application.Service.Facade;
-using CargoDDD.Application.Service.Implement;
+﻿using CargoDDD.Application.Service;
 
 namespace CargoDDD.WebApi.Extensions
 {
@@ -7,7 +6,7 @@ namespace CargoDDD.WebApi.Extensions
     {
         public static IServiceCollection AddApplication(this IServiceCollection services)
         {
-            services.AddScoped<ICargoApplication, CargoApplication>();
+            services.AddScoped<ICargoTrafficApplication, CargoTrafficApplication>();
             return services;
         }
     }

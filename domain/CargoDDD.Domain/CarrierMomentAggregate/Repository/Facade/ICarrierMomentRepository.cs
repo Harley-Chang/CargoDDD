@@ -1,4 +1,4 @@
-﻿namespace CargoDDD.Domain.CarrierMomentAggregate.Repository.Facade;
+﻿namespace CargoDDD.Domain.CarrierMomentAggregate.Repository;
 public interface ICarrierMomentRepository<TEntity> : IDisposable where TEntity : class
 {
     Task AddAsync(TEntity entity);
