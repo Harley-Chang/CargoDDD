@@ -1,3 +1,11 @@
 # Cargo microservice
 
-采用DDD+CQRS架构设计，遵循SOLID设计原则，案例为领域驱动设计原书案例
+## 采用以下的设计思想与技术
+- DDD
+- CQRS
+- SOLID
+- ADR
+- .NET 7
+- AutoMapper
+- MediatR
+- RabbitMq
