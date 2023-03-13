@@ -1,6 +1,5 @@
 # Cargo microservice
 
-## 采用以下的设计思想与技术
 - DDD
 - CQRS
 - SOLID
