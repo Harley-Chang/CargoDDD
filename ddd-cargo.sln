@@ -9,11 +9,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HC.Domain", "src\domain\HC.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HC.Application", "src\application\HC.Application\HC.Application.csproj", "{0450133D-9A05-4270-9AEC-888ABC2B9FDB}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HC.FunctionalTests", "src\tests\HC.FunctionalTests\HC.FunctionalTests.csproj", "{4D7F82A0-1FDF-4084-BD13-D3E104EC16BD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HC.FunctionalTests", "tests\HC.FunctionalTests\HC.FunctionalTests.csproj", "{4D7F82A0-1FDF-4084-BD13-D3E104EC16BD}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HC.IntegrationTests", "src\tests\HC.IntegrationTests\HC.IntegrationTests.csproj", "{2CC309A7-D337-498F-AD0C-72846B51BA95}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HC.IntegrationTests", "tests\HC.IntegrationTests\HC.IntegrationTests.csproj", "{2CC309A7-D337-498F-AD0C-72846B51BA95}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HC.UnitTests", "src\tests\HC.UnitTests\HC.UnitTests.csproj", "{D03845C6-3065-4A15-B930-F0F7A6A7FB80}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HC.UnitTests", "tests\HC.UnitTests\HC.UnitTests.csproj", "{D03845C6-3065-4A15-B930-F0F7A6A7FB80}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{443AAFA5-05CA-4E9B-83B6-4500A3D4F5C4}"
 EndProject
