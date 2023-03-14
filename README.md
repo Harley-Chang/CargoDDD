@@ -4,3 +4,4 @@
 - CQRS
 - SOLID
 - ADR
+- CI/CD
