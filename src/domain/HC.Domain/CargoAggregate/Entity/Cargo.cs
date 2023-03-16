@@ -13,7 +13,7 @@ namespace HC.Domain.CargoAggregate.Entity
 
         public Cargo GenerateTracingId()
         {
-            TracingId = $"{DateTime.UtcNow://YYYYMMddHHmmfff}_{new Random().Next(1000, 9000)}";
+            TracingId = $"{DateTime.UtcNow:yyyyMMddHHmmfff}_{new Random().Next(1000, 9000)}";
             return this;
         }
 

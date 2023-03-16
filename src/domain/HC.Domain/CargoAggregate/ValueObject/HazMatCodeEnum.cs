@@ -20,6 +20,7 @@ public enum HazMatCodeEnum
     XFS = 700,
     [Description("腐蚀品")]
     XFW = 800,
+    //一些重金属
     [Description("杂类")]
     XZW = 900
 }
