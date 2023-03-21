@@ -18,6 +18,15 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
+    <PackageReference Include="Microsoft.AspNetCore.TestHost" Version="7.0.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="7.0.4" />
   </ItemGroup>
 
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\interface\HC.WebApi\HC.WebApi.csproj" />
+    <ProjectReference Include="..\..\src\application\HC.Application\HC.Application.csproj" />
+    <ProjectReference Include="..\..\src\domain\HC.Domain\HC.Domain.csproj" />
+    <ProjectReference Include="..\..\src\infrastruct\HC.Repository\HC.Repository.csproj" />
+  </ItemGroup>
 </Project>
