@@ -13,3 +13,5 @@
 - ✔️ AutoMapper
 - ✔️ Sql Server
 - ✔️ Swagger
+- ✔️ XUnit
+- ✔️ TestServer
