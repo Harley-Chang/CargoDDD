@@ -1,12 +1,12 @@
 # Cargo microservice
 
-## 架构设计
+## Architecture
 - ✔️ SOLID
 - ✔️ DDD
 - ✔️ CQRS
 - ✔️ ADR
 
-## 技术栈
+## Building Blocks
 - ✔️ .Net 7
 - ✔️ MediatR
 - ✔️ EF Core
