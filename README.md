@@ -16,6 +16,5 @@ DDD（领域驱动设计）原书案例，货物运输微服务
 - ✔️ Swagger
 - ✔️ XUnit
 - ✔️ TestServer
-- ✔️ HealthCheck
 - ✔️ SecurityHeaders
 
