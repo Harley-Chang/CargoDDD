@@ -17,7 +17,7 @@ public class CargoIntegrationTest : IClassFixture<TestFixture<Startup>>
     }
 
     [Fact]
-    public async Task Cargo_Added_ShouldBe_Finded()
+    public async Task Cargo_Added_HttpStatusCode_ShouldBe_OK()
     {
         //Arrange
         var cargoName = "书籍";
@@ -36,6 +36,7 @@ public class CargoIntegrationTest : IClassFixture<TestFixture<Startup>>
                         .SendAsync("POST");
 
         //Assert
+        response.EnsureSuccessStatusCode();
         Assert.Equal(HttpStatusCode.OK, response.StatusCode);
     }
 }

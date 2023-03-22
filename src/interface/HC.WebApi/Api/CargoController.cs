@@ -19,11 +19,5 @@ namespace HC.WebApi.Api
         {
             await _mediator.Publish(command);
         }
-
-        [HttpGet]
-        public async Task<string> GetAsync()
-        {
-            return await Task.FromResult(DateTime.Now.Year.ToString());
-        }
     }
 }

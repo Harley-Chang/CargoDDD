@@ -2,7 +2,6 @@ using HC.Domain;
 using HC.WebApi.Extensions;
 using System.Reflection;
 using MediatR;
-using Microsoft.Extensions.DependencyInjection;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -13,13 +12,16 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddApplication();
+builder.Services.AddHealthChecks();
 builder.Services.AddMediatR(
     Assembly.Load("HC.WebApi"),
     Assembly.Load("HC.Application"),
     Assembly.Load("HC.Domain"),
     Assembly.Load("HC.Repository")
     );
-builder.Services.AddDbContext<BaseDbContext, TrafficDbContext>();
+builder.Services
+        .AddDbContext<BaseDbContext, TrafficDbContext>()
+        .AddSqlServer<TrafficDbContext>(builder.Configuration.GetConnectionString("SqlServer"));
 builder.Services.AddRepository();
 builder.Services.AddAutoMapper(
     Assembly.Load("HC.WebApi"),
@@ -38,5 +40,6 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 app.UseAuthorization();
+app.UseHealthChecks("/health").UseHealthChecks("/healthy");
 app.MapControllers();
 app.Run();
