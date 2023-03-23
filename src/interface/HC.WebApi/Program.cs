@@ -2,6 +2,9 @@ using HC.Domain;
 using HC.WebApi.Extensions;
 using System.Reflection;
 using MediatR;
+using Newtonsoft.Json;
+using Microsoft.AspNetCore.Diagnostics.HealthChecks;
+using Microsoft.Extensions.Diagnostics.HealthChecks;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -40,6 +43,18 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 app.UseAuthorization();
-app.UseHealthChecks("/health").UseHealthChecks("/healthy");
+app.UseRouting();
 app.MapControllers();
+app.MapHealthChecks("health", new HealthCheckOptions()
+{
+    AllowCachingResponses = false,
+    ResponseWriter = (context, report)
+    => context.Response.WriteAsync(JsonConvert.SerializeObject(new { Status = report.Status.ToString() })),
+    ResultStatusCodes ={
+            [HealthStatus.Healthy]=StatusCodes.Status200OK,
+            [HealthStatus.Degraded]=StatusCodes.Status200OK,
+            [HealthStatus.Unhealthy]=StatusCodes.Status503ServiceUnavailable
+        }
+});
+
 app.Run();
