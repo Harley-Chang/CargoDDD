@@ -7,9 +7,12 @@ using Microsoft.AspNetCore.Diagnostics.HealthChecks;
 using Microsoft.Extensions.Diagnostics.HealthChecks;
 
 var builder = WebApplication.CreateBuilder(args);
+// Remove server header from response
+builder.WebHost.UseKestrel(options => options.AddServerHeader = false);
+var headerPolicyCollection = new HeaderPolicyCollection()
+    .AddDefaultSecurityHeaders();
 
 // Add services to the container.
-
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
@@ -35,12 +38,12 @@ builder.Services.AddAutoMapper(
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
+app.UseSecurityHeaders(headerPolicyCollection);
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
 }
-
 app.UseHttpsRedirection();
 app.UseAuthorization();
 app.UseRouting();

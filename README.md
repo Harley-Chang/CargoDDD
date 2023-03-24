@@ -9,12 +9,12 @@ DDD（领域驱动设计）原书案例，货物运输微服务
 
 ## Building Blocks
 - ✔️ .Net 7
-- ✔️ MediatR
+- ✔️ [MediatR](https://github.com/jbogard/MediatR)
 - ✔️ EF Core
-- ✔️ AutoMapper
+- ✔️ [AutoMapper](https://github.com/AutoMapper/AutoMapper)
 - ✔️ Sql Server
-- ✔️ Swagger
+- ✔️ [Swagger](https://github.com/domaindrivendev/Swashbuckle.AspNetCore)
 - ✔️ XUnit
 - ✔️ TestServer
-- ✔️ SecurityHeaders
+- ✔️ [SecurityHeaders](https://github.com/andrewlock/NetEscapades.AspNetCore.SecurityHeaders)
 

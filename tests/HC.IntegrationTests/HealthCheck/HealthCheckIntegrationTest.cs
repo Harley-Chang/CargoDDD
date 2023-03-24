@@ -13,7 +13,7 @@ using Microsoft.AspNetCore.TestHost;
 namespace HC.IntegrationTests.HealthCheck;
 
 [Collection("HealthCheck")]
-public class SecurityIntegrationTest
+public class HealthCheckIntegrationTest
 {
     [Fact]
     public async Task HealthCheck_ShouldBe_Return_Healthy()
