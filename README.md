@@ -16,6 +16,5 @@ DDD（领域驱动设计）原书案例，货物运输微服务
 - ✔️ [Swagger](https://github.com/domaindrivendev/Swashbuckle.AspNetCore)
 - ✔️ [XUnit](https://github.com/xunit/xunit)
 - ✔️ [Assert.XUnit](https://github.com/xunit/assert.xunit)
-- ✔️ TestServer
 - ✔️ [SecurityHeaders](https://github.com/andrewlock/NetEscapades.AspNetCore.SecurityHeaders)
 
