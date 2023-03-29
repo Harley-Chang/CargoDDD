@@ -21,6 +21,6 @@ public class TestFixture<TStartup> : IDisposable where TStartup : class
     public void Dispose()
     {
         HttpClient.Dispose();
-        _testServer.Dispose();
+        TestServer.Dispose();
     }
 }

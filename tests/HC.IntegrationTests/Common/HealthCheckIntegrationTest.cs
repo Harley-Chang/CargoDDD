@@ -10,7 +10,7 @@ using Newtonsoft.Json;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.TestHost;
 
-namespace HC.IntegrationTests.HealthCheck;
+namespace HC.IntegrationTests.Common;
 
 [Collection("HealthCheck")]
 public class HealthCheckIntegrationTest

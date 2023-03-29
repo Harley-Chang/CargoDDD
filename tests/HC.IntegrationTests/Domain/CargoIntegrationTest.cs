@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using System.Net;
 using Newtonsoft.Json;
 
-namespace HC.IntegrationTests.Cargo;
+namespace HC.IntegrationTests.Domain;
 
 [Collection("Cargo")]
 public class CargoIntegrationTest : IClassFixture<TestFixture<Startup>>
