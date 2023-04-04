@@ -18,3 +18,5 @@ DDD（领域驱动设计）原书案例，货物运输微服务
 - ✔️ [Assert.XUnit](https://github.com/xunit/assert.xunit)
 - ✔️ [SecurityHeaders](https://github.com/andrewlock/NetEscapades.AspNetCore.SecurityHeaders)
 
+## Why DDD?
+<center><img src="https://github.com/Harley-Chang/CargoDDD/blob/master/assets/images/cargo-ddd.png" /></center>
